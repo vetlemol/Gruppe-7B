@@ -1,5 +1,9 @@
 # Gruppe-7B
 Gruppe 7B sin felles repository
-Vetle Moldvær
-Første semester på UiA
-24 år
+Cornelia Rosendahl Sirevaag
+Semester 1
+20 år
+
+Mathias José Bull Jørgensen
+Student på UiA
+Drit Kul
