@@ -1,0 +1,228 @@
+red = circle(15, "solid", "red")
+blue = circle(35, "solid", "blue")
+green = circle(25, "solid", "green")
+orange = circle(45, "solid", "Orange")
+black = circle(5, "solid", "Black")
+white = circle(45, "solid", "transparent")
+C = "center"
+
+
+
+GB = underlay-align(C,C,
+  orange, 
+  blue)
+
+BG = underlay-align(C,C,
+  GB, 
+  green)
+
+GR = underlay-align(C,C,
+  BG, 
+  red)
+
+Del1 = underlay-align(C,C,
+  GR, 
+  black)
+
+Del2 = underlay-xy(
+  Del1,
+  200, 50, 
+  black)
+
+start = underlay-xy(
+  Del2,
+  400, 50, 
+  black)
+
+start
+
+
+S1 = underlay-xy(underlay-xy(underlay-align(C, C,
+      underlay-align(C,C, GB, green),
+      black),
+  200, 50,
+    underlay-align(
+      C, C,
+      red,
+      black)),
+  400, 50,
+  black)
+  
+ 
+
+S1
+
+S2 = underlay-xy(underlay-xy(underlay-align(C, C,
+      GB,
+      black),
+  200, 50,
+    underlay-align(
+      C, C,
+      red,
+      black)),
+  400, 50,
+  underlay-align(C, C,
+    green, black))
+
+S2
+
+
+
+S3 = underlay-xy(underlay-xy(underlay-align(C, C,
+      GB,
+      black),
+  200, 50,
+    black),
+  400, 50,
+  underlay-align(C, C,
+    green, underlay-align(C, C, red, black)))
+  
+S3
+
+
+
+S4 = underlay-xy(underlay-xy(underlay-align(C, C,
+      orange,
+      black),
+    200, 20,
+    underlay-align(C, C,
+      blue,
+      black)),
+  400, 40,
+  underlay-align(C, C,
+    green, underlay-align(C, C, red, black)))
+
+S4
+
+S5 = underlay-xy(underlay-xy(underlay-align(C, C,
+      underlay-align(C,C, orange, red),
+        black),
+    200, 20,
+    underlay-align(C, C,
+      blue,
+        black)),
+  400, 40,
+  underlay-align(C, C,
+      green, black))
+
+S5
+
+
+S6 = underlay-xy(underlay-xy(underlay-align(C, C,
+      underlay-align("center","center", orange, red),
+        black),
+    200, 20,
+    underlay-align(C, C,
+      underlay-align(C, C,blue, green),
+        black)),
+  400, 40,
+  black)
+  
+S6
+
+S7 = underlay-xy(underlay-xy(underlay-align(C, C,
+      orange,
+        black),
+    200, 20,
+    underlay-align(C, C,
+      underlay-align(C, C,blue, underlay-align(C,C, green, red)),
+        black)),
+  400, 40,
+  black)
+
+S7
+
+S8 = underlay-xy(underlay-xy(underlay-align(C,C, white, black),
+    200, 20,
+    underlay-align(C, C,
+      underlay-align(C, C,blue, underlay-align(C,C, green, red)),
+        black)),
+  400, 0,
+  underlay-align(C, C, orange, black))
+S8
+
+S9 = underlay-xy(underlay-xy(underlay-align(C,C, white, black),
+    200, 20,
+    underlay-align(C, C,
+      underlay-align(C, C,blue, green),
+        black)),
+  400, 0,
+  underlay-align(C, C, orange, underlay-align(C, C, red, black)))
+S9
+
+S10 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, black)),
+    200, 20,
+    underlay-align(C, C,
+      blue,
+        black)),
+  400, 0,
+  underlay-align(C, C, orange, underlay-align(C, C, red, black)))
+S10
+
+
+S11 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, black)),
+    200, 20,
+    underlay-align(C, C,
+      blue,
+        black)),
+  400, 0,
+  underlay-align(C, C, orange, underlay-align(C, C, red, black)))
+S11
+
+S12 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, underlay-align(C, C, red, black))),
+    200, 20,
+    underlay-align(C, C,
+      blue,
+        black)),
+  400, 0,
+  underlay-align(C, C, orange, black))
+
+S12
+
+
+S13 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, underlay-align(C, C, red, black))),
+    200, 20,
+    underlay-align(C, C,
+      white,
+        black)),
+  400, 0,
+  underlay-align(C, C, orange, underlay-align(C, C, blue, black)))
+
+S13
+
+S14 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, black)),
+    200, 20,
+    underlay-align(C, C,
+      white,
+      underlay-align(C, C, red, black))),
+  400, 0,
+    underlay-align(C, C, orange, underlay-align(C, C, blue, black)))
+
+S14
+
+
+S15 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, white, black)),
+    200, 20,
+    underlay-align(C, C,
+      white,
+      underlay-align(C, C, red, black))),
+  400, 0,
+  underlay-align(C, C, orange, underlay-align(C, C, blue, underlay-align(C,C, green, black))))
+
+S15
+
+Slutt = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, white, black)),
+    200, 20,
+    underlay-align(C, C,
+      white,
+      underlay-align(C, C, white, black))),
+  400, 0,
+  underlay-align(C, C, orange, underlay-align(C, C, blue, underlay-align(C,C, green, underlay-align(C, C, red, black)))))
+
+Slutt
+
+
+
+
+
+
