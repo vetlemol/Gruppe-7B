@@ -160,14 +160,6 @@ S10 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, gr
 S10
 
 
-S11 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, black)),
-    200, 20,
-    underlay-align(C, C,
-      blue,
-        black)),
-  400, 0,
-  underlay-align(C, C, orange, underlay-align(C, C, red, black)))
-S11
 
 S12 = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, green, underlay-align(C, C, red, black))),
     200, 20,
@@ -220,9 +212,3 @@ Slutt = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, 
   underlay-align(C, C, orange, underlay-align(C, C, blue, underlay-align(C,C, green, underlay-align(C, C, red, black)))))
 
 Slutt
-
-
-
-
-
-
