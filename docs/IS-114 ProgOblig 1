@@ -1,14 +1,14 @@
-red = circle(15, "solid", "red")
+red = circle(15, "solid", "red") # Skriver om slik at koden skal være lettere å lese og slik at det blir mindre koding
 blue = circle(35, "solid", "blue")
 green = circle(25, "solid", "green")
 orange = circle(45, "solid", "Orange")
 black = circle(5, "solid", "Black")
 white = circle(45, "solid", "transparent")
-C = "center"
+C = "center" 
 
 
 
-GB = underlay-align(C,C,
+GB = underlay-align(C,C, # underlay-align brukes for å putte sirklene oppå hverandre
   orange, 
   blue)
 
@@ -24,7 +24,7 @@ Del1 = underlay-align(C,C,
   GR, 
   black)
 
-Del2 = underlay-xy(
+Del2 = underlay-xy( #underlay-xy brukes for å plassere de svarte dottene mot høyere slik at det blir 3 forskjellig "pinner"
   Del1,
   200, 50, 
   black)
@@ -34,10 +34,10 @@ start = underlay-xy(
   400, 50, 
   black)
 
-start
+start # Dette starter koden og viser første bilde på panelet til høyre
 
 
-S1 = underlay-xy(underlay-xy(underlay-align(C, C,
+S1 = underlay-xy(underlay-xy(underlay-align(C, C, #Dette er mal for resten av sirklene, herfra og nedover er koding for det meste copy and paste hvor noen variabler blir byttet ut underlay-align hvis flere av sirklene skal bli stacket oppå hverandre
       underlay-align(C,C, GB, green),
       black),
   200, 50,
@@ -109,7 +109,7 @@ S5
 
 
 S6 = underlay-xy(underlay-xy(underlay-align(C, C,
-      underlay-align("center","center", orange, red),
+      underlay-align(C, C, orange, red),
         black),
     200, 20,
     underlay-align(C, C,
@@ -211,4 +211,10 @@ Slutt = underlay-xy(underlay-xy(underlay-align(C,C, white, underlay-align(C, C, 
   400, 0,
   underlay-align(C, C, orange, underlay-align(C, C, blue, underlay-align(C,C, green, underlay-align(C, C, red, black)))))
 
-Slutt
+Slutt # Kjører siste bilde i panelet til høyre
+
+
+
+
+
+
