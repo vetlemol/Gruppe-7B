@@ -1,6 +1,3 @@
-include image
-include color
-
 red = circle(15, "solid", "red") # Skriver om slik at koden skal være lettere å lese og slik at det blir mindre koding
 blue = circle(35, "solid", "blue")
 green = circle(25, "solid", "green")
@@ -136,34 +133,34 @@ S7 = underlay-xy(underlay-xy(underlay-align(C, C,
 S7
 
 #Observerer at steg 8 er det speilvendte av steg 7 i den mentale modellen, benytter flip-horizontal funksjon for å speile outputen
-s8 = flip-horizontal(s7)
+S8 = flip-horizontal(S7)
 
-s8
+S8
 
 #Innser at resten av stegene kan løses ved å speile trekkene i motsatt rekkefølge. Konkluderer med at siden starttilstanden og sluttilstanden er lik bare speilet ovenfor hverandre; vil de optimale trekkene fra én er halveis i spillet tilsvare de samme trekkene fra første halvdel, men speilet i motsatt rekkefølge
-s9 = flip-horizontal(s6)
+S9 = flip-horizontal(S6)
 
-s9
+S9
 
-s10 = flip-horizontal(s5)
+S10 = flip-horizontal(S5)
 
-s10
+S10
 
-s11 = flip-horizontal(s4)
+S11 = flip-horizontal(S4)
 
-s11
+S11
 
-s12 = flip-horizontal(s3)
+S12 = flip-horizontal(S3)
 
-s12
+S12
 
-s13 = flip-horizontal(s2)
+S13 = flip-horizontal(S2)
 
-s13
+S13
 
-s14 = flip-horizontal(s1)
+S14 = flip-horizontal(S1)
 
-s14
+S14
 
 Slutt = flip-horizontal(start)
 
