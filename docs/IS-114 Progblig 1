@@ -29,12 +29,10 @@ piece3n4 = overlay-align("center", "middle", piece4, piece3)  #piece3n4 består 
 
 komplett = overlay-align(   #Komplett tårn med alle brikker
   "center", "middle", piece4, overlay-align(
-    "center", "middle", piece3, overlay-align(
-      "center", "middle", piece3, overlay-align(  # Vet ikke helt hvorfor vi trenger piece3 to ganger, men virker som om koden er skjør og går ødelagt hvis vi fjerner ene piece3
+     "center", "middle", piece3, overlay-align(
         "center", "middle", piece2, piece1)
       )
     )
-  )
 
 stolpe-a = put-image(  #Plasserer stolpe A til venstre i midten av en tom scene
   stolpe,
