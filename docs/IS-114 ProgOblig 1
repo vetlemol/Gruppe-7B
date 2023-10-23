@@ -1,3 +1,6 @@
+include image
+include color
+
 red = circle(15, "solid", "red") # Skriver om slik at koden skal være lettere å lese og slik at det blir mindre koding
 blue = circle(35, "solid", "blue")
 green = circle(25, "solid", "green")
@@ -132,7 +135,7 @@ S7 = underlay-xy(underlay-xy(underlay-align(C, C,
 
 S7
 
-#Observerer at steg 8 er det speilvendte av steg 7 i den mentale modellen, benytter flip-horizontal funksjon for å speiel outputen
+#Observerer at steg 8 er det speilvendte av steg 7 i den mentale modellen, benytter flip-horizontal funksjon for å speile outputen
 s8 = flip-horizontal(s7)
 
 s8
