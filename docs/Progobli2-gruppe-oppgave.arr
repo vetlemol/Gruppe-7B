@@ -44,7 +44,12 @@ var Orange-Ar = a.get-now(3)
 
 fun rod(x) :
   x1 = num-round(x)
-  if (a.get-now(0) == 150) :
+  
+  if (a.get-now(1) == 300) and (a.get-now(2) == 300) and (a.get-now(3) == 300) and (a.get-now(0) == 150) and (x1 == 1) :
+    "Du vant!"
+  else if (a.get-now(1) == 300) and (a.get-now(2) == 300) and (a.get-now(3) == 300) and (a.get-now(0) == 0) and (x1 == 2):
+      "Du vant!" 
+    else if (a.get-now(0) == 150) :
     block:
       if (x1 < -1) or (x1 > 1) :
         "ugyldig trekk"
@@ -242,7 +247,7 @@ end
 
 fun oransj(x) :
   x1 = num-round(x)
-  if (a.get-now(3) == a.get-now(1)) or (a.get-now(2) == a.get-now(0)) or (a.get-now(3) == a.get-now(2)) :
+  if (a.get-now(3) == a.get-now(1)) or (a.get-now(3) == a.get-now(0)) or (a.get-now(3) == a.get-now(2)) :
     block:
       "ugyldig trekk"
     end
