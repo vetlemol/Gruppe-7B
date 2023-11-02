@@ -21,10 +21,7 @@ Kontroller = table: Kontroll :: String, age :: Number, Hva :: String
   row: "gronn()", 12, "gronn() er grønn sirkel. Put et nummer mellom parantesen for spesifisere hvilken pinne den skal på, tall man kan bruke: 0, 1, 2"
   row: "blaa()", 12, "blaa() er Blå sirkel. Put et nummer mellom parantesen for spesifisere hvilken pinne den skal på, tall man kan bruke: 0, 1, 2"
   row: "oranj()", 12, "oransj() er oransj sirkel. Put et nummer mellom parantesen for spesifisere hvilken pinne den skal på, tall man kan bruke: 0, 1, 2"
-  row: "reset-Ar0()", 12, "Skriv inn alle disse for å resete hanoi tårnet"
-  row: "reset-Ar1()", 12, "Skriv inn alle disse for å resete hanoi tårnet"
-  row: "reset-Ar2()", 12, "Skriv inn alle disse for å resete hanoi tårnet"
-  row: "reset-Ar3()", 12, "Skriv inn alle disse for å resete hanoi tårnet"
+  row: "reset0()", 12, "reset tårnet" 
 end
 Kontroller
 
@@ -32,26 +29,6 @@ a = [array: 0, 0, 0, 0]
 
 
 
-fun
-  reset-Ar0() :
-  array-set-now(a, 0, 0)
-  
-end
-fun
-  reset-Ar1() :
-  array-set-now(a, 1, 0)
-
-end
-fun
-  reset-Ar2() :
-  array-set-now(a, 2, 0)
-
-end
-fun
-  reset-Ar3() :
-  array-set-now(a, 3, 0)
-
-end
 
 red-Ar = a.get-now(0)
 green-Ar = a.get-now(1)
@@ -126,3 +103,26 @@ fun play() :
 end
 
 
+fun reset() :
+  y1 = (a.get-now(0) * 0)
+  nm = array-set-now(a, 0, y1)
+  reset2()
+end
+
+fun reset2() :
+  y1 = (a.get-now(1) * 0)
+  b = array-set-now(a, 1, y1)
+  reset3()
+end
+
+fun reset3() :
+  y1 = (a.get-now(2) * 0)
+  c = array-set-now(a, 2, y1)
+  reset4()
+end
+
+fun reset4() :
+  y1 = (a.get-now(3) * 0)
+  array-set-now(a, 3, y1)
+  
+end
