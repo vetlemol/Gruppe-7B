@@ -25,56 +25,113 @@ Kontroller = table: Kontroll :: String, age :: Number, Hva :: String
 end
 Kontroller
 
-a = [array: 0, 0, 0, 0]
+var a = [array: 0, 0, 0, 0]
 
 
 
 
-red-Ar = a.get-now(0)
-green-Ar = a.get-now(1)
-Blue-Ar = a.get-now(2)
-Orange-Ar = a.get-now(3)
+var red-Ar = a.get-now(0)
+var green-Ar = a.get-now(1)
+var Blue-Ar = a.get-now(2)
+var Orange-Ar = a.get-now(3)
 
 
 
 
 fun rod(x) :
-  x1 = red-Ar 
-  y1 = x1 + (x * 150)
-  nm = array-set-now(a, 0, y1)
-  play()
+  if (a.get-now(0) == 150) :
+    block:
+      if (x < -1) or (x > 1) :
+        "ugyldig trekk"
+      else: 
+          block:
+          if (x < -2) or (x > 2) :
+            "ugyldig trekk"
+          else:
+            y1 = a.get-now(0) + (x * 150)
+            nm = array-set-now(a, 0, y1)
+            play()
+          end
+        end
+      end
+    end
+      
+  else if (a.get-now(0) == 0) :
+      block:
+      if (x < 0) or (x > 2) :
+          "ugyldig trekk"
+          else:
+        y1 = a.get-now(0) + (x * 150)
+          nm = array-set-now(a, 0, y1)
+          play()
+        end
+      end
+ 
+    
+  else if (a.get-now(0) == 300) :
+    block:
+      if (x < -2) or (x > 0) :
+        "ugyldig trekk"
+        else:
+        y1 = a.get-now(0) + (x * 150)
+        nm = array-set-now(a, 0, y1)
+        play()
+      end
+    end
+  end
 end
 
 
+
+
+
+
 fun gronn(x) :
+  if (x > 2) or (x < 0) or (a.get-now(1) == a.get-now(0)) :
+    "Ugyldig"
+  else:
   x1 = green-Ar 
   y1 = x1 + (x * 150)
   nm = array-set-now(a, 1, y1)
   play()
   
 end
+end
+
 
 
 
 fun blaa(x) :
+   if (x > 2) :
+    "Ugyldig"
+  else if (x < 0) :
+    "Ugyldig"
+  else:
   x1 = Blue-Ar 
   y1 = x1 + (x * 150)
   nm = array-set-now(a, 2, y1)
   play()
 end
+end
 
 fun oransj(x) :
-  
+   if (x > 2) :
+    "Ugyldig"
+  else if (x < 0) :
+    "Ugyldig"
+  else:
   x1 = Orange-Ar 
   y1 = x1 + (x * 150)
   nm = array-set-now(a, 3, y1)
   play()
   
 end
+end
 
 
 fun play() :
   Spillmove = overlay-xy(
+    overlay-xy(
     overlay-xy(
       underlay-xy(
         underlay-xy(
@@ -98,6 +155,9 @@ fun play() :
       bl), 
     300, 
     0, 
+      bl),
+    0,
+    0,
     bl)
   Spillmove
 end
