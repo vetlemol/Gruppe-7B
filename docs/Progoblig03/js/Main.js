@@ -22,7 +22,3 @@ src.appendChild(Bilde)
 const quotestext = document.getElementById("Tekst" + i)
 quotestext.innerHTML = quotes[i]
 }
-
-//document.getElementById("flytt" + i).onclick = function () {
- //   location.href ="./Medlemmerinfo/Mathias.html";
-//}

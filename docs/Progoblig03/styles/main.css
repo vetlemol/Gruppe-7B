@@ -7,6 +7,33 @@ header{
     top: 0;
     left: 0;
 }
+.Navigasjonbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30%;
+}
+#prosjekter{
+    position: right;
+    padding-left: 600px;
+    padding-top: 35px;
+}
+
+#prostext{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: 2.5rem;
+    color: grey;
+
+}
+
+#prostext:hover {
+    color: lightgray;
+    cursor: pointer;
+}
 body {
     margin-top: 300px;
     background-color: #87C4FF;
@@ -33,19 +60,29 @@ body {
     margin-bottom: 0;
     color: grey;
 }
+.Gruppehov :hover {
+    color: lightgray;
+    cursor: pointer;
+}
 
 .hverpers1 {
     background-color: #39A7FF;
     margin-top: 0;
-  width: 100%;
+    width: 100%;
+    margin: 0;
 }
 .hverpers0 {
     background-color: #87C4FF;
     margin-top: 0;
     width: 100%;
     margin: 0;
-  
-   
+}
+
+.hverpers0 :hover{
+cursor: pointer;
+}
+.hverpers1:hover{
+    cursor: pointer;
 }
 
 
@@ -96,4 +133,23 @@ img{
 #beskrivelse{
     padding-left: 5rem;
     margin-right: 20%;
+}
+
+#canvas0,
+#canvas {
+    padding-left: 30%;
+    padding-top:50px;
+}
+
+svg{
+    padding-left: 35%;
+}
+
+#kreativfigurtekst{
+    margin-left: 5rem;
+    padding-top: 2rem;
+    padding-right: 0;
+    font-size: 50px;
+    border-bottom: solid;
+    display: inline-block;
 }
