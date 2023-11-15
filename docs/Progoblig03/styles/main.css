@@ -1,0 +1,99 @@
+header{
+    padding-top: 2rem;
+    margin: 0;
+    background-color: #E0F4FF ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+body {
+    margin-top: 300px;
+    background-color: #87C4FF;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.body0 {
+    margin-top: 300px;
+    background-color: #39A7FF ;
+    margin-left: 0;
+    margin-right: 0;
+}
+.body1 {
+    margin-top: 300px;
+    background-color: #87C4FF;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.Gruppenavn{
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: grey;
+}
+
+.hverpers1 {
+    background-color: #39A7FF;
+    margin-top: 0;
+  width: 100%;
+}
+.hverpers0 {
+    background-color: #87C4FF;
+    margin-top: 0;
+    width: 100%;
+    margin: 0;
+  
+   
+}
+
+
+
+.perstittel1 { 
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 3rem;
+    font-size: 3rem;
+    color: white;
+
+}
+.perstittel0 { 
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: grey;
+
+}
+
+.tekst{
+    font-size: 2.5rem;
+    padding-right: 10rem;
+    color: whitesmoke;
+}
+
+.tekstogBilde1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+}
+.tekstogBilde0 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
+#beskrivelse{
+    padding-left: 5rem;
+    margin-right: 20%;
+}
