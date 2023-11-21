@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<header>
+    <div class="Navigasjonbar">
+        <div>
+            <center class="Gruppehov">
+                <h2 class="Gruppenavn" onclick="location.href='../Index.html'">Mentor Gruppe 7B</h2>
+            </center>
+        </div>
+        <div id="prosjekter">
+            <h2 id="prostext">Figurer</h2>
+        </div>
+    </div>
+    
+</header>
+<body>
+    <div >
+        <table>
+            <tr>
+                <td>
+                    <p onclick="canvasrectangel('red', 0, 0, 150, 100)" class="figurtekst" id="canrek"> Rektangel Canvas (Trykk på meg)</p>
+                </td>
+                <td> 
+                    <canvas id="canvas" width="200" height="200"></canvas>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p onclick="canvasCircle('red', 60, 60, 50)" class="figurtekst"  id="cancirc"> Sirkel Canvas (Trykk på meg) </p>
+                </td>
+                <td>
+                    <canvas id="canvas2" width="200" height="200"></canvas>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="figurtekst"> Rektangel SVG</p>
+                </td>
+                <td>
+                    <svg width="400" height="110">
+                        <rect width="300" height="100" style="fill:rgb(255, 0, 0);stroke-width:3;stroke:rgb(0,0,0)" />
+                      </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="figurtekst"  id="cancirc"> Sirkel SVG </p>
+                </td>
+                <td>
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                      </svg>
+                </td>
+            </tr>
+
+        </table>
+        
+    </div>
+</body>
+<script src="./Figurer.js"></script>
+</html>

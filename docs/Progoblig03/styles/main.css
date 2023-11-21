@@ -85,8 +85,6 @@ cursor: pointer;
     cursor: pointer;
 }
 
-
-
 .perstittel1 { 
     text-align: left;
     padding-left: 5rem;
@@ -106,8 +104,9 @@ cursor: pointer;
 
 .tekst{
     font-size: 2.5rem;
-    padding-right: 10rem;
+    padding-right: 5rem;
     color: whitesmoke;
+    width: 1350px;
 }
 
 .tekstogBilde1 {
@@ -125,7 +124,7 @@ cursor: pointer;
     padding-bottom: 3rem;
 }
 
-img{
+.Bilde0{
     width: 500px;
     height: 500px;
 }
@@ -133,12 +132,6 @@ img{
 #beskrivelse{
     padding-left: 5rem;
     margin-right: 20%;
-}
-
-#canvas0,
-#canvas {
-    padding-left: 30%;
-    padding-top:50px;
 }
 
 svg{
@@ -152,4 +145,21 @@ svg{
     font-size: 50px;
     border-bottom: solid;
     display: inline-block;
+}
+
+
+
+.figurtekst{
+    font-size: 2.5rem;
+    padding-right: 10rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.quotetekst{
+    width: 1000;
+}
+
+#MathiasFitekst{
+    padding-left: 5rem;
 }
