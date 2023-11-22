@@ -1,12 +1,12 @@
-var canvas1 = document.getElementById("myCanvas2");
-var context = canvas1.getContext("2d");
+var canvas2 = document.getElementById("myCanvas2");
+var context = canvas2.getContext("2d");
 
 
 
 //Stor firkant
-context.fillStyle = "green";
+context.fillStyle = "white";
 context.fill();
-context.strokeRect(30, 30, 400, 400);
+context.fillRect(30, 30, 400, 400);
 context.fill();
 
 // trekant
