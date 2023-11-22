@@ -16,7 +16,7 @@ header{
 #prosjekter{
     position: right;
     padding-left: 600px;
-    padding-top: 35px;
+    padding-top: 15px;
 }
 
 #prostext{
@@ -59,7 +59,7 @@ body {
 
 .Gruppenavn{
     padding-bottom: 3rem;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 0;
     color: grey;
 }
