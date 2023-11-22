@@ -39,15 +39,18 @@ body {
     background-color: #87C4FF;
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
 }
 
 .body0 {
+    width: 100%;
     margin-top: 300px;
     background-color: #39A7FF ;
     margin-left: 0;
     margin-right: 0;
 }
 .body1 {
+    width: 100%;
     margin-top: 300px;
     background-color: #87C4FF;
     margin-left: 0;
@@ -68,13 +71,13 @@ body {
 .hverpers1 {
     background-color: #39A7FF;
     margin-top: 0;
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 .hverpers0 {
     background-color: #87C4FF;
     margin-top: 0;
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -157,7 +160,8 @@ svg{
 }
 
 .quotetekst{
-    width: 1000;
+    width: 60%;
+    padding-right: 10rem;
 }
 
 #MathiasFitekst{
