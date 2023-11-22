@@ -1,4 +1,4 @@
-const canvas = document.getElementById("myCanvas1");
+const canvas = document.getElementById("myCanvas3");
 const ctx = canvas.getContext("2d");
 
 ctx.beginPath();
