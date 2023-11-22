@@ -1,4 +1,4 @@
-var canvas1 = document.getElementById("myCanvas1");
+var canvas1 = document.getElementById("myCanvas6");
 var context = canvas1.getContext("2d");
 var centerX1 = canvas1.width / 2 - 120;
 var centerY1 = canvas1.height / 2 - 120;
