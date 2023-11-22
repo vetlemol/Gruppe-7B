@@ -1,17 +1,17 @@
-const canvas = document.getElementById("myCanvas5");
-const ctx = canvas.getContext("2d");
+const canvas5 = document.getElementById("myCanvas5");
+const ctx5 = canvas5.getContext("2d");
 
-ctx.fillStyle = "red";
-ctx.fillRect(20, 20, 300, 350);
-ctx.fillStyle = "black";
-ctx.fillRect(180, 220, 100, 150);
+ctx5.fillStyle = "red";
+ctx5.fillRect(20, 20, 300, 350);
+ctx5.fillStyle = "black";
+ctx5.fillRect(180, 220, 100, 150);
 
-ctx.beginPath();
-ctx.arc(230, 120, 50, 0, 2 * Math.PI);
-ctx.fillStyle = "white";
-ctx.fill();
+ctx5.beginPath();
+ctx5.arc(230, 120, 50, 0, 2 * Math.PI);
+ctx5.fillStyle = "white";
+ctx5.fill();
 
-ctx.beginPath();
-ctx.arc(100, 120, 50, 0, 2 * Math.PI);
-ctx.fillStyle = "white";
-ctx.fill();
+ctx5.beginPath();
+ctx5.arc(100, 120, 50, 0, 2 * Math.PI);
+ctx5.fillStyle = "white";
+ctx5.fill();
