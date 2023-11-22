@@ -15,3 +15,4 @@ ctx5.beginPath();
 ctx5.arc(100, 120, 50, 0, 2 * Math.PI);
 ctx5.fillStyle = "white";
 ctx5.fill();
+
