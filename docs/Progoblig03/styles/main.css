@@ -109,7 +109,7 @@ cursor: pointer;
     font-size: 2.5rem;
     padding-right: 5rem;
     color: whitesmoke;
-    width: 1350px;
+
 }
 
 .tekstogBilde1 {
@@ -162,7 +162,7 @@ svg{
 
 .quotetekst{
     width: 60%;
-    padding-right: 10rem;
+    margin: 10rem;
 }
 
 #MathiasFitekst{
