@@ -6,15 +6,15 @@ var context = canvas1.getContext("2d");
 
 // the triangle
 context.beginPath();
-context.moveTo(100, 100);
-context.lineTo(50, 150);
-context.lineTo(150, 150);
-context.lineTo(150, 150);
-context.lineTo(150, 150);
-context.lineTo(150, 150);
-context.lineTo(150, 150);
-context.lineTo(150, 150);
-context.lineTo(150, 150);
+context.moveTo(108, 0.0);
+context.lineTo(141, 70);
+context.lineTo(218, 78.3);
+context.lineTo(162, 131);
+context.lineTo(175, 205);
+context.lineTo(108, 170);
+context.lineTo(41.2, 205);
+context.lineTo(55, 131);
+context.lineTo(108, 0.0);
 context.closePath();
 context.fillStyle = "red";
 context.fill();
